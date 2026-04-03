@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "django_filters",
     "drf_spectacular",
+    "corsheaders",
 ]
 
 
@@ -69,6 +70,7 @@ SPECTACULAR_SETTINGS = {
 }
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -78,6 +80,12 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+]
 
 ROOT_URLCONF = "todo.urls"
 
