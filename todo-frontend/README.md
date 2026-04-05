@@ -1,16 +1,35 @@
-# React + Vite
+A full-stack Todo application featuring a Django REST Framework backend and a React frontend. This app allows users to create accounts, log in securely, and manage their personal tasks with full CRUD (Create, Read, Update, Delete) functionality.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+User Authentication: Secure Login and Signup using DRF Token Authentication.
 
-Currently, two official plugins are available:
+Private Task Lists: Each user can only see and manage their own tasks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Task Management:
 
-## React Compiler
+Add new tasks with titles and detailed descriptions.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Toggle task completion status with a checkbox.
 
-## Expanding the ESLint configuration
+Delete tasks permanently.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Dynamic UI: Built with React hooks (useState, useEffect) for a smooth, single-page experience.
+
+Persistent Login: Uses localStorage and Axios interceptors to keep users logged in across refreshes.
+
+🛠️ Tech Stack
+Frontend:
+
+React.js
+
+Axios (for API communication)
+
+CSS3
+
+Backend:
+
+Django & Django REST Framework
+
+SQLite (Development Database)
+
+Token Authentication
